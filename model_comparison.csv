@@ -1,0 +1,6 @@
+model,accuracy %,± std,malignant recall %,malignant precision %,ROC AUC
+Logistic regression,97.6,1.27,95.12,98.41,0.995
+Random forest,95.96,2.02,93.57,95.66,0.99
+Gradient boosting,95.78,2.01,92.62,96.04,0.992
+Decision tree,92.85,2.7,89.79,90.9,0.922
+Baseline (always benign),62.74,0.39,0.0,0.0,0.5
