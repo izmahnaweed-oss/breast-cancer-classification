@@ -6,7 +6,7 @@
 
 **Comparing machine learning models on 569 tumor samples, with a focus on catching malignant cases.**
 
-[Open in Colab](https://colab.research.google.com/github/izmahnaweed/breast-cancer-classification/blob/main/breast_cancer_classification.ipynb)
+[Open in Colab](https://colab.research.google.com/github/izmahnaweed-oss/breast-cancer-classification/blob/main/breast_cancer_classification.ipynb)
 
 ## 🔬 Overview
 I compared several machine learning models on the Breast Cancer Wisconsin dataset to see which best tells malignant tumors from benign ones, and I looked closely at the mistakes they make. I'm interested in biomedical research, so I wanted to see how machine learning works on real medical data and where it goes wrong.
