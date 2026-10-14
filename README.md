@@ -47,10 +47,6 @@ On the held-out test set (114 tumors), logistic regression got 112 right: it cau
 
 With only two errors in 114 samples, I can't draw strong conclusions about why they happened. They look like borderline cases.
 
-## 🧠 Which measurements matter
-![Strongest features](top_coefficients.png)
-
-The features the logistic regression weighted most strongly toward **malignant** were worst texture, radius error, worst concave points, worst area, and worst radius. The features weighted most strongly toward **benign** were mean compactness, compactness error, fractal dimension error, symmetry error, and texture error. Radius and area describe the size of a nucleus, texture is how much its brightness varies, concave points count the dents in its outline, compactness is how tightly packed the shape is, and fractal dimension is how rough the outline is. "Worst" is the mean of the three largest values in an image, and "error" is the standard error of a measurement. These are what the model weighted, not proof of what causes cancer. Many of the measurements overlap (radius, area, and perimeter, or compactness, concavity, and concave points), so the direction of any single feature should be read with caution.
 
 ## ⚗️ Extra experiments
 **Lowering the cutoff.** I tested flagging tumors as malignant at lower probabilities. The missed cancer stayed missed even at a 10% cutoff, and false alarms rose from 1 to 11.
